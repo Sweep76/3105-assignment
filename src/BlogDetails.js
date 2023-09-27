@@ -3,6 +3,9 @@ import useFetch from "./useFetch";
 import { Link } from 'react-router-dom';
 import { useState } from "react";
 
+
+/* test message */
+
 const BlogDetails = () => {
   const { id } = useParams();
   const { data: blog, error, isPending } = useFetch('http://localhost:8000/blogs/' + id);
